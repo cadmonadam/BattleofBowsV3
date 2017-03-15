@@ -1,236 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context="com.example.android.battleofbows.MainActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="1dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
-        android:onClick="resetScore"
-        android:text="Reset" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="match_parent">
+
+        <Button
+            style="@style/Reset"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#bde8f9"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="14dp"
-                android:text="Archer"
-                android:textColor="#616161"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/target2" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="14dp"
-                android:text="Bowman"
-                android:textColor="#616161"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:background="#bde8f9"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
+                android:background="@color/colorLightBlue"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/archer_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:paddingBottom="12dp"
-                    android:paddingTop="12dp"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
+                    style="@style/TextView1"
+                    android:text="@string/Player1" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addTenForArcher"
-                    android:text="+10 Scores" />
+                <ImageView
+                    style="@style/ImageView"
+                    android:src="@drawable/target2" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addNineForArcher"
-                    android:text="+9 Scores" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addSevenForArcher"
-                    android:text="+7 Scores" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addFiveForArcher"
-                    android:text="+5 Scores" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addThreeForArcher"
-                    android:text="+3 Scores" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addOneForArcher"
-                    android:text="+1 Scores" />
+                <TextView
+                    style="@style/TextView1"
+                    android:text="@string/Player2" />
 
             </LinearLayout>
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="46dp"
-                android:layout_marginTop="16dp"
-                android:background="#5cbad8" />
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@color/colorLightBlue"
+                android:orientation="horizontal">
 
-
-                <TextView
-                    android:id="@+id/bowman_score"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:gravity="center"
-                    android:paddingBottom="12dp"
-                    android:paddingTop="12dp"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="36sp" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addTenForBowman"
-                    android:text="+10 Scores" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addNineForBowman"
-                    android:text="+9 Scores" />
+                    <TextView
+                        android:id="@+id/archer_score"
+                        style="@style/TextView2"
+                        android:text="0" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addSevenForBowman"
-                    android:text="+7 Scores" />
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addTenForArcher"
+                        android:text="@string/s10" />
 
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addFiveForBowman"
-                    android:text="+5 Scores" />
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addNineForArcher"
+                        android:text="@string/s9" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addThreeForBowman"
-                    android:text="+3 Scores" />
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addSevenForArcher"
+                        android:text="@string/s7" />
 
-                <Button
-                    android:layout_width="match_parent"
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addFiveForArcher"
+                        android:text="@string/s5" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addThreeForArcher"
+                        android:text="@string/s3" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addOneForArcher"
+                        android:text="@string/s1" />
+
+                </LinearLayout>
+
+                <View style="@style/View" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:onClick="addOneForBowman"
-                    android:text="+1 Scores" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/bowman_score"
+                        style="@style/TextView2"
+                        android:text="0" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addTenForBowman"
+                        android:text="@string/s10" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addNineForBowman"
+                        android:text="@string/s9" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addSevenForBowman"
+                        android:text="@string/s7" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addFiveForBowman"
+                        android:text="@string/s5" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addThreeForBowman"
+                        android:text="@string/s3" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="addOneForBowman"
+                        android:text="@string/s1" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
+    </RelativeLayout>
 
-    </LinearLayout>
-</RelativeLayout>
-
+</ScrollView>

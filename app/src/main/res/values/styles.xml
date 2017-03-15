@@ -2,9 +2,67 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#5cbad8</item>
+        <item name="colorPrimary">@color/colorMain</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#5cbad8</item>
+        <item name="colorButtonNormal">@color/colorMain</item>
     </style>
+
+    <style name="Reset">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+        <item name="colorButtonNormal">@color/colorMain</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
+    </style>
+
+    <style name="TextView1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="TextView2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="View">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottomLarge</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@color/colorMain</item>
+    </style>
+
 </resources>
 

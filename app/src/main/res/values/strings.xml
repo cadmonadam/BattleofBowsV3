@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">BattleofBows</string>
+    <string name="reset">reset</string>
+    <string name="s1">+1 Score</string>
+    <string name="s3">+3 Score</string>
+    <string name="s5">+5 Score</string>
+    <string name="s7">+7 Score</string>
+    <string name="s9">+9 Score</string>
+    <string name="s10">+10 Score</string>
+    <string name="Player1">Archer</string>
+    <string name="Player2">Bowman</string>
 </resources>

@@ -19,10 +19,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("scoreArcher", scoreArcher);
+        outState.putInt("scoreBowman", scoreBowman);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        scoreArcher = savedInstanceState.getInt("scoreArcher");
+        scoreBowman = savedInstanceState.getInt("scoreBowman");
+
+
+        displayForArcher(scoreArcher);
+        displayForBowman(scoreBowman);
+
+    }
+
+
     /**
      * Increase the score for Archer by 10 points.
      */
-    public void addTenForArcher (View v) {
+    public void addTenForArcher(View v) {
         scoreArcher = (scoreArcher + 10);
         displayForArcher(scoreArcher);
     }
@@ -30,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Archer by 9 points.
      */
-    public void addNineForArcher (View v) {
+    public void addNineForArcher(View v) {
         scoreArcher = (scoreArcher + 9);
         displayForArcher(scoreArcher);
     }
@@ -38,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Archer by 7 points.
      */
-    public void addSevenForArcher (View v) {
+    public void addSevenForArcher(View v) {
         scoreArcher = (scoreArcher + 7);
         displayForArcher(scoreArcher);
     }
@@ -46,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Archer by 5 points.
      */
-    public void addFiveForArcher (View v) {
+    public void addFiveForArcher(View v) {
         scoreArcher = (scoreArcher + 5);
         displayForArcher(scoreArcher);
     }
@@ -54,15 +75,15 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Archer by 3 points.
      */
-    public void addThreeForArcher (View v) {
+    public void addThreeForArcher(View v) {
         scoreArcher = (scoreArcher + 3);
         displayForArcher(scoreArcher);
     }
 
     /**
-     * Increase the score for Archer by 1 points.
+     * Increase the score for Archer by 1 point.
      */
-    public void addOneForArcher (View v) {
+    public void addOneForArcher(View v) {
         scoreArcher = (scoreArcher + 1);
         displayForArcher(scoreArcher);
     }
@@ -71,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Bowman by 10 points.
      */
-    public void addTenForBowman (View v) {
+    public void addTenForBowman(View v) {
         scoreBowman = (scoreBowman + 10);
         displayForBowman(scoreBowman);
     }
@@ -79,14 +100,15 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Bowman by 9 points.
      */
-    public void addNineForBowman (View v) {
+    public void addNineForBowman(View v) {
         scoreBowman = (scoreBowman + 9);
         displayForBowman(scoreBowman);
     }
+
     /**
      * IIncrease the score for Bowman by 7 points.
      */
-    public void addSevenForBowman (View v) {
+    public void addSevenForBowman(View v) {
         scoreBowman = (scoreBowman + 7);
         displayForBowman(scoreBowman);
     }
@@ -94,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Bowman by 5 points.
      */
-    public void addFiveForBowman (View v) {
+    public void addFiveForBowman(View v) {
         scoreBowman = (scoreBowman + 5);
         displayForBowman(scoreBowman);
     }
@@ -102,14 +124,15 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for Bowman by 3 points.
      */
-    public void addThreeForBowman (View v) {
+    public void addThreeForBowman(View v) {
         scoreBowman = (scoreBowman + 3);
         displayForBowman(scoreBowman);
     }
+
     /**
-     * IIncrease the score for Bowman by 1 points.
+     * IIncrease the score for Bowman by 1 point.
      */
-    public void addOneForBowman (View v) {
+    public void addOneForBowman(View v) {
         scoreBowman = (scoreBowman + 1);
         displayForBowman(scoreBowman);
     }
@@ -118,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
      * Resets the score for both Archer and Bowman.
      */
 
-    public void resetScore (View v){
+    public void resetScore(View v) {
         scoreArcher = 0;
         scoreBowman = 0;
         displayForArcher(scoreArcher);
