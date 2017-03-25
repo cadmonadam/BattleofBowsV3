@@ -5,6 +5,11 @@
         <item name="colorPrimary">@color/colorMain</item>
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">@color/colorMain</item>
+
+        //Change the editText bottom line color
+        <item name="colorControlNormal">@color/colorLightBlue</item>
+        <item name="colorControlActivated">@color/colorLightBlue</item>
+        <item name="colorControlHighlight">@color/colorLightBlue</item>
     </style>
 
     <style name="Reset">
@@ -12,7 +17,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginBottom">@dimen/layout_marginBottom</item>
+        <item name="android:layout_marginBottom">@dimen/layout_marginBottom_Reset</item>
         <item name="android:layout_marginLeft">@dimen/layout_marginLeft</item>
         <item name="android:layout_marginRight">@dimen/layout_marginRight</item>
         <item name="colorButtonNormal">@color/colorMain</item>
@@ -60,7 +65,7 @@
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/layout_marginBottomLarge</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/layout_marginTop</item>
         <item name="android:background">@color/colorMain</item>
     </style>
 

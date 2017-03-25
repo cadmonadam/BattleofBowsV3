@@ -7,6 +7,6 @@
     <string name="s7">+7 Score</string>
     <string name="s9">+9 Score</string>
     <string name="s10">+10 Score</string>
-    <string name="Player1">Archer</string>
-    <string name="Player2">Bowman</string>
+    <string name="Player1">Enter Your Name Here</string>
+    <string name="Player2">Enter Your Name Here</string>
 </resources>
