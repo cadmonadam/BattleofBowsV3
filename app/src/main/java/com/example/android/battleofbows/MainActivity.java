@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String SCOREB_STATE = "scoreBowman";
     //Shows the score for Archer. Archer refers to player1 on the left side.
     int scoreArcher = 0;
-    //Shows the score for Bowman. Bowman refers to player2 on the left side.
+    //Shows the score for Bowman. Bowman refers to player2 on the right side.
     int scoreBowman = 0;
 
     @Override

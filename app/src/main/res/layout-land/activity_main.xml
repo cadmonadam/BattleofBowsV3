@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.battleofbows.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Reset2"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText1"
+                style="@style/TextView1"
+                android:hint="@string/Player1"
+                android:inputType="textMultiLine" />
+
+            <ImageView
+                style="@style/ImageView"
+                android:src="@drawable/target2" />
+
+            <EditText
+                android:id="@+id/editText2"
+                style="@style/TextView1"
+                android:hint="@string/Player2"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@color/colorLightBlue"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/archer_score"
+                    style="@style/TextView2"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addTenForArcher"
+                        android:text="@string/s10" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addNineForArcher"
+                        android:text="@string/s9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addSevenForArcher"
+                        android:text="@string/s7" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addFiveForArcher"
+                        android:text="@string/s5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addThreeForArcher"
+                        android:text="@string/s3" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addOneForArcher"
+                        android:text="@string/s1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/View2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/bowman_score"
+                    style="@style/TextView2"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addTenForBowman"
+                        android:text="@string/s10" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addNineForBowman"
+                        android:text="@string/s9" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addSevenForBowman"
+                        android:text="@string/s7" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addFiveForBowman"
+                        android:text="@string/s5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addThreeForBowman"
+                        android:text="@string/s3" />
+
+                    <Button
+                        style="@style/Button2"
+                        android:onClick="addOneForBowman"
+                        android:text="@string/s1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
